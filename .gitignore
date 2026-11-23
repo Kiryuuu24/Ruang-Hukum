@@ -1,0 +1,60 @@
+# ---------- Dependencies ----------
+/vendor/
+/node_modules/
+
+# ---------- Environment & secrets ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ---------- Config lokal ----------
+# (config/*.php saat ini membaca env var, jadi aman di-commit.
+#  Kalau suatu saat kamu bikin config lokal berisi kredensial, tambahkan di sini.)
+/config/*.local.php
+
+# ---------- Log, cache, upload ----------
+*.log
+/logs/
+/storage/
+/cache/
+/tmp/
+/uploads/
+
+# ---------- Database dump / backup ----------
+*.sqlite
+*.sqlite3
+*.bak
+*.dump
+# Dump hasil export (skema awal database/ruang_hukum.sql tetap di-commit)
+/database/backup/
+/database/*_backup.sql
+
+# ---------- OS ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# ---------- Editor / IDE ----------
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# ---------- XAMPP / lokal ----------
+*.tmp
+*.cache
+.phpunit.result.cache
+.php-cs-fixer.cache
+composer.phar
+
+# ---------- Arsip ----------
+*.zip
+*.rar
+*.7z
+*.tar.gz
